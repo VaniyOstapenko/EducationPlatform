@@ -1,0 +1,35 @@
+import {
+  getAllUsersDB,
+  getUserByIdDB,
+  updateUserDB,
+} from "../repository/user.repository";
+import { iUser } from "../interfaces/interfaces";
+
+async function getAllUsers(): Promise<iUser[]> {
+  const data = await getAllUsersDB();
+  if (!data.length) throw new Error("no data");
+
+  return data;
+}
+
+async function getUserById(id: number): Promise<iUser[]> {
+  const data = await getUserByIdDB(id);
+  if (!data.length) throw new Error("no data");
+
+  return data;
+}
+
+async function updateUser(
+  id: number,
+  name: string,
+  surname: string,
+  email: string,
+  pwd: string
+): Promise<iUser[]> {
+  const data = await updateUserDB(id, name, surname, email, pwd);
+  if (!data.length) throw new Error("no data");
+
+  return data;
+}
+
+export { getAllUsers, getUserById, updateUser };
