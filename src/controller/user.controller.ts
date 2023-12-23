@@ -1,14 +1,20 @@
 import express, { Request, Response } from "express";
-import { getAllUsers, getUserById, updateUser } from "../service/user.service";
+import {
+  getAllUsers,
+  getUserById,
+  updateUser,
+  deleteUser,
+} from "../service/user.service";
+import buildResponse from "../helper/buildResponse";
 
 const route = express.Router();
 
 route.get("/", async (req: Request, res: Response): Promise<void> => {
   try {
     const data = await getAllUsers();
-    res.status(200).send(data);
+    buildResponse(res, 200, data);
   } catch (error: any) {
-    res.status(404).send(error.message);
+    buildResponse(res, 404, error.message);
   }
 });
 
@@ -16,9 +22,9 @@ route.get("/:id", async (req: Request, res: Response): Promise<void> => {
   try {
     const { id } = req.params;
     const data = await getUserById(id);
-    res.status(200).send(data);
+    buildResponse(res, 200, data);
   } catch (error: any) {
-    res.status(404).send(error.message);
+    buildResponse(res, 404, error.message);
   }
 });
 
@@ -28,9 +34,20 @@ route.put("/:id", async (req: Request, res: Response): Promise<void> => {
     const { name, surname, email, pwd } = req.body;
     const data = await updateUser(id, name, surname, email, pwd);
 
-    res.status(200).send(data);
+    buildResponse(res, 200, data);
   } catch (error: any) {
-    res.status(404).send(error.message);
+    buildResponse(res, 404, error.message);
+  }
+});
+
+route.delete("/:id", async (req: Request, res: Response): Promise<void> => {
+  try {
+    const { id } = req.params;
+    const data = await deleteUser(id);
+
+    buildResponse(res, 200, data);
+  } catch (error: any) {
+    buildResponse(res, 404, error.message);
   }
 });
 

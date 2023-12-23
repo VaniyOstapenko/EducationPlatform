@@ -2,6 +2,7 @@ import {
   getAllUsersDB,
   getUserByIdDB,
   updateUserDB,
+  deleteUserDB,
 } from "../repository/user.repository";
 import { iUser } from "../interfaces/interfaces";
 
@@ -32,4 +33,11 @@ async function updateUser(
   return data;
 }
 
-export { getAllUsers, getUserById, updateUser };
+async function deleteUser(id: number): Promise<iUser[]> {
+  const data = await deleteUserDB(id);
+  if (!data.length) throw new Error("no data");
+
+  return data;
+}
+
+export { getAllUsers, getUserById, updateUser, deleteUser };

@@ -42,4 +42,22 @@ async function updateUserDB(
   }
 }
 
-export { getAllUsersDB, getUserByIdDB, updateUserDB };
+async function deleteUserDB(id: number): Promise<undefined[]> {
+  const client = await pool.connect();
+
+  try {
+    await client.query("BEGIN");
+    const sql = `delete from users where id = $1 returning *`;
+    const data = (await client.query(sql, [id])).rows;
+    await client.query("COMMIT");
+
+    return data;
+  } catch (error: any) {
+    await client.query("ROLLBACK");
+    console.log(`deleteUser: ${error.message}`);
+
+    return [];
+  }
+}
+
+export { getAllUsersDB, getUserByIdDB, updateUserDB, deleteUserDB };
