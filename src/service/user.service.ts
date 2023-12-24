@@ -2,28 +2,28 @@ import { getAllUsersDB, getUserByIdDB, updateUserDB, deleteUserDB } from '../rep
 import { iUser, isValid } from '../interfaces/interfaces';
 import ExceptionType from '../helper/exception';
 
-async function getAllUsers(): Promise<iUser[] | isValid[]> {
+async function getAllUsers(): Promise<iUser[]> {
   const data = await getAllUsersDB();
   if (!data.length) throw new Error(ExceptionType.DATA_VALID_SERVICE_GET_ALL_USERS);
 
   return data;
 }
 
-async function getUserById(id: number): Promise<iUser[] | isValid[]> {
+async function getUserById(id: number): Promise<iUser[]> {
   const data = await getUserByIdDB(id);
   if (!data.length) throw new Error(ExceptionType.DATA_VALID_SERVICE_GET_USER_BY_ID);
 
   return data;
 }
 
-async function updateUser(id: number, name: string, surname: string, email: string, pwd: string): Promise<iUser[] | isValid[]> {
+async function updateUser(id: number, name: string, surname: string, email: string, pwd: string): Promise<iUser[]> {
   const data = await updateUserDB(id, name, surname, email, pwd);
   if (!data.length) throw new Error(ExceptionType.DATA_VALID_SERVICE_UPDATE);
 
   return data;
 }
 
-async function deleteUser(id: number): Promise<iUser[] | isValid[]> {
+async function deleteUser(id: number): Promise<iUser[]> {
   const data = await deleteUserDB(id);
   if (!data.length) throw new Error(ExceptionType.DATA_VALID_SERVICE_DELETE);
 

@@ -13,4 +13,9 @@ interface isValid {
   DATA_VALID_SERVICE_DELETE: string;
 }
 
-export { iUser, isValid };
+interface iCourses {
+  id: number;
+  course: string;
+}
+
+export { iUser, isValid, iCourses };

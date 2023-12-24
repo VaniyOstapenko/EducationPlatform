@@ -6,7 +6,8 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "format": "prettier --write .",
-    "eslint": "eslint ."
+    "lint": "eslint --ext .ts src/",
+    "lint:fix": "npm run lint --fix"
   },
   "author": "",
   "license": "ISC",
