@@ -6,4 +6,11 @@ interface iUser {
   pwd: string;
 }
 
-export { iUser };
+interface isValid {
+  DATA_VALID_SERVICE_GET_ALL_USERS: string;
+  DATA_VALID_SERVICE_GET_USER_BY_ID: string;
+  DATA_VALID_SERVICE_UPDATE: string;
+  DATA_VALID_SERVICE_DELETE: string;
+}
+
+export { iUser, isValid };
