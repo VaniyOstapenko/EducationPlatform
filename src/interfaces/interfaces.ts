@@ -9,8 +9,29 @@ interface iUser {
 interface isValid {
   DATA_VALID_SERVICE_GET_ALL_USERS: string;
   DATA_VALID_SERVICE_GET_USER_BY_ID: string;
-  DATA_VALID_SERVICE_UPDATE: string;
-  DATA_VALID_SERVICE_DELETE: string;
+  DATA_VALID_SERVICE_UPDATE_USER: string;
+  DATA_VALID_SERVICE_DELETE_USER: string;
+
+  DATA_VALID_SERVICE_GET_ALL_COURSE: string;
+  DATA_VALID_SERVICE_GET_COURSE_BY_ID: string;
+  DATA_VALID_SERVICE_CREATE_COURSE: string;
+  DATA_VALID_SERVICE_UPDATE_COURSE: string;
+  DATA_VALID_SERVICE_DELETE_COURSE: string;
+
+  DATA_API_FOUND_USER: string;
+  DATA_API_LENGTH: string;
+  DATA_AUTH_USER: string;
+  DATA_AUTH_PWD: string;
+
+  DATA_USER_NAME: string;
+  DATA_USER_SURNAME: string;
+  DATA_USER_EMAIL: string;
+  DATA_USER_PWD: string;
+  DATA_NAME_IS_NAN: string;
+  DATA_SURNAME_IS_NAN: string;
+  DATA_PWD_LENGTH: string;
+  DATA_EMAIL: string;
+  DATA_ID: string;
 }
 
 interface iCourses {

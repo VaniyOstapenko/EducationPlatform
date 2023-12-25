@@ -1,5 +1,5 @@
 import { getAllUsersDB, getUserByIdDB, updateUserDB, deleteUserDB } from '../repository/user.repository';
-import { iUser, isValid } from '../interfaces/interfaces';
+import { iUser } from '../interfaces/interfaces';
 import ExceptionType from '../helper/exception';
 
 async function getAllUsers(): Promise<iUser[]> {
@@ -18,14 +18,14 @@ async function getUserById(id: number): Promise<iUser[]> {
 
 async function updateUser(id: number, name: string, surname: string, email: string, pwd: string): Promise<iUser[]> {
   const data = await updateUserDB(id, name, surname, email, pwd);
-  if (!data.length) throw new Error(ExceptionType.DATA_VALID_SERVICE_UPDATE);
+  if (!data.length) throw new Error(ExceptionType.DATA_VALID_SERVICE_UPDATE_USER);
 
   return data;
 }
 
 async function deleteUser(id: number): Promise<iUser[]> {
   const data = await deleteUserDB(id);
-  if (!data.length) throw new Error(ExceptionType.DATA_VALID_SERVICE_DELETE);
+  if (!data.length) throw new Error(ExceptionType.DATA_VALID_SERVICE_DELETE_USER);
 
   return data;
 }

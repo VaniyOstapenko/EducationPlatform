@@ -1,6 +1,7 @@
 import express, { Request, Response } from 'express';
 import { getAllUsers, getUserById, updateUser, deleteUser } from '../service/user.service';
 import buildResponse from '../helper/buildResponse';
+import { isValidUserBody, isValidId } from '../helper/validation';
 
 const route = express.Router();
 
@@ -23,7 +24,7 @@ route.get('/:id', async (req: Request, res: Response): Promise<void> => {
   }
 });
 
-route.put('/:id', async (req: Request, res: Response): Promise<void> => {
+route.put('/:id', isValidId, isValidUserBody, async (req: Request, res: Response): Promise<void> => {
   try {
     const { id } = req.params;
     const { name, surname, email, pwd } = req.body;

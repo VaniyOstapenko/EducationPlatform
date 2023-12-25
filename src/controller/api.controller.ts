@@ -2,10 +2,11 @@ import express, { Request, Response } from 'express';
 import buildResponse from '../helper/buildResponse';
 import { registrationUser, authUser } from '../service/api.service';
 import createToken from '../helper/jwt';
+import { isValidUserBody } from '../helper/validation';
 
 const route = express.Router();
 
-route.post('/reg', async (req: Request, res: Response) => {
+route.post('/reg', isValidUserBody, async (req: Request, res: Response) => {
   try {
     const { name, surname, email, pwd } = req.body;
     const data = await registrationUser(name, surname, email, pwd);
