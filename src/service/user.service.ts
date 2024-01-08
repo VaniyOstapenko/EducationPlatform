@@ -1,4 +1,4 @@
-import { getAllUsersDB, getUserByIdDB, updateUserDB, deleteUserDB } from '../repository/user.repository';
+import { getAllUsersDB, getUserByIdDB, updateUserDB, deleteUserDB, createUserDB } from '../repository/user.repository';
 import { iUser } from '../interfaces/interfaces';
 import ExceptionType from '../helper/exception';
 
@@ -12,6 +12,13 @@ async function getAllUsers(): Promise<iUser[]> {
 async function getUserById(id: number): Promise<iUser[]> {
   const data = await getUserByIdDB(id);
   if (!data.length) throw new Error(ExceptionType.DATA_VALID_SERVICE_GET_USER_BY_ID);
+
+  return data;
+}
+
+async function createUser(name: string, surname: string, email: string, pwd: string): Promise<iUser[]> {
+  const data = await createUserDB(name, surname, email, pwd);
+  if (!data.length) throw new Error('empty');
 
   return data;
 }
@@ -30,4 +37,4 @@ async function deleteUser(id: number): Promise<iUser[]> {
   return data;
 }
 
-export { getAllUsers, getUserById, updateUser, deleteUser };
+export { getAllUsers, getUserById, updateUser, deleteUser, createUser };
