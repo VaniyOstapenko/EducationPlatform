@@ -21,7 +21,17 @@ function Preview() {
             </div>
 
             <div className={style.learnContent}>
-
+                <div className={style.secondPreview}>
+                    <div className={style.Img}></div>
+                    <div className={style.textBlock}>
+                        <h2>Learn a language in a playful way</h2>
+                        <p>Make learning programming languages more fun with mini-games</p>
+                        <div className={style.miniImg}>
+                            <div className={style.firstImg}></div>
+                            <div className={style.secondImg}></div>
+                        </div>
+                    </div>
+                </div>
             </div>
             <div className={style.knowledgeContent}>
 
