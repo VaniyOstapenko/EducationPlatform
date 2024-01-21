@@ -127,3 +127,42 @@
   width: 172px;
   height: 112px;
 }
+
+.wrapper .knowledgeContent {
+  display: flex;
+  height: 400px;
+  margin-left: 100px;
+}
+
+.wrapper .knowledgeContent .thirdPreview h2 {
+  color: var(--Primaty-Black, #000);
+  font: 400 48px "Dela Gothic One";
+  width: 470px;
+  margin-top: 95px;
+}
+
+.wrapper .knowledgeContent .thirdPreview p {
+  color: var(--Primaty-Grey-Dark, #757575);
+  font: 600 18p "Montserrat";
+  width: 300px;
+  margin-top: 30px;
+}
+
+.wrapper .knowledgeContent .thirdPreview .btn {
+  border-radius: 100px;
+  background: var(--Primaty-Cyan-Light, #c3dce3);
+  color: #2b788b;
+  font: 700 16px "Montserrat";
+  width: 131px;
+  height: 44px;
+  padding: 12px 25px;
+  margin-top: 34px;
+}
+
+.wrapper .knowledgeContent .thirdImg {
+  background-image: url(./assets/image\ 2.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 580px;
+  height: 470px;
+}

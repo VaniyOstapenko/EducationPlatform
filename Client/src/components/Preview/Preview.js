@@ -33,9 +33,16 @@ function Preview() {
                     </div>
                 </div>
             </div>
-            <div className={style.knowledgeContent}>
 
+            <div className={style.knowledgeContent}>
+                <div className={style.thirdPreview}>
+                    <h2>Increase your knowledge</h2>
+                    <p>Traditional and new effective approaches to learning languages</p>
+                    <div className={style.btn}>Textbook→</div>
+                </div>
+                <div className={style.thirdImg}></div>
             </div>
+
             <div className={style.progressContent}>
 
             </div>
