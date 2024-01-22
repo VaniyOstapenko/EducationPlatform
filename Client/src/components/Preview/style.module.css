@@ -166,3 +166,42 @@
   width: 580px;
   height: 470px;
 }
+
+.wrapper .progressContent {
+  display: flex;
+  margin-top: 150px;
+  height: 500px;
+}
+
+.wrapper .progressContent .forthImg {
+  background-image: url(./assets/image\ 1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 680px;
+  height: 400px;
+}
+
+.wrapper .progressContent .fourthText h2 {
+  color: var(--Primaty-Black, #000);
+  font: 400 48px "Dela Gothic One";
+  width: 470px;
+  margin-top: 30px;
+}
+
+.wrapper .progressContent .fourthText p {
+  color: var(--Primaty-Grey-Dark, #757575);
+  font: 600 18px "Montserrat";
+  width: 390px;
+  margin-top: 30px;
+}
+
+.wrapper .progressContent .fourthText .btn {
+  border-radius: 100px;
+  background: var(--Primaty-Cyan-Light, #c3dce3);
+  width: 129px;
+  height: 44px;
+  color: var(--Primaty-Cyan-Dark, #2b788b);
+  font: 700 16px "Montserrat";
+  padding: 12px 25px;
+  margin-top: 30px;
+}
