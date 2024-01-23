@@ -5,6 +5,12 @@
 
 .wrapper .previewContent {
   display: flex;
+  height: 650px;
+}
+
+.wrapper .previewContent .previewInfo{
+  position: relative;
+  z-index: 2;
 }
 
 .wrapper .previewContent .previewInfo .textPlatform {
@@ -71,17 +77,21 @@
 
 .wrapper .previewImg {
   background-image: url(./assets/Frame\ 24.png);
-  width: 933px;
+  width: 1100px;
   height: 601px;
   background-repeat: no-repeat;
   background-size: cover;
   margin-top: 25px;
+  position: relative;
+  z-index: 1;
+  margin-left: -130px;
 }
 
 .wrapper .learnContent .secondPreview {
   display: flex;
   justify-content: space-between;
   height: 600px;
+  background: #fff;
 }
 
 .wrapper .learnContent .secondPreview .Img {
@@ -90,7 +100,7 @@
   background-size: contain;
   width: 580px;
   height: 445px;
-  margin-top: 70px;
+  margin-top: 80px;
 }
 
 .wrapper .learnContent .secondPreview .textBlock h2 {
@@ -138,7 +148,7 @@
   color: var(--Primaty-Black, #000);
   font: 400 48px "Dela Gothic One";
   width: 470px;
-  margin-top: 95px;
+  margin-top: 170px;
 }
 
 .wrapper .knowledgeContent .thirdPreview p {
@@ -163,6 +173,7 @@
   background-image: url(./assets/image\ 2.png);
   background-repeat: no-repeat;
   background-size: contain;
+  margin-top: 80px;
   width: 580px;
   height: 470px;
 }
@@ -170,7 +181,8 @@
 .wrapper .progressContent {
   display: flex;
   margin-top: 150px;
-  height: 500px;
+  height: 600px;
+  background: #fff;
 }
 
 .wrapper .progressContent .forthImg {
@@ -179,13 +191,14 @@
   background-size: contain;
   width: 680px;
   height: 400px;
+  margin: 100px 0 0 50px;
 }
 
 .wrapper .progressContent .fourthText h2 {
   color: var(--Primaty-Black, #000);
   font: 400 48px "Dela Gothic One";
   width: 470px;
-  margin-top: 30px;
+  margin-top: 130px;
 }
 
 .wrapper .progressContent .fourthText p {

@@ -1,31 +1,53 @@
 .wrapper {
   width: 1220px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
   margin: auto;
 }
 
-.wrapper h1 {
+.wrapper .item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.wrapper .item .textItem{
+  display: flex;
+  align-items: center;
+  grid-gap: 30px;
+}
+
+.wrapper .item .textItem h1 {
   font: 400 16px "Dela Gothic One";
   color: #000;
 }
 
-.wrapper .btns {
+.wrapper .textItem .img {
+  background-image: url(./assets/Vector\ 1.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 5px;
+  height: 17px;
+}
+
+.wrapper .item .btns {
   display: flex;
   align-items: center;
 }
 
-.wrapper .btns .login {
+.wrapper .item .btns .login {
   font: 700 16px "Montserrat";
   color: #000;
   margin-right: 25px;
 }
 
-.wrapper .btns .reg {
+.wrapper .item .btns .reg {
   font: 700 16px "Montserrat";
   color: #fff;
   border-radius: 14.188px;
   background: #2b788b;
   padding: 13px 21px;
+}
+
+.wrapper .stroke {
+  border: 1.2px solid #e6e5e5;
+  margin-top: 15px;
 }

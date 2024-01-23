@@ -1,0 +1,86 @@
+.wrapper {
+  width: 1220px;
+  margin: 2% auto;
+}
+
+.wrapper .paragrafs {
+  display: flex;
+  justify-content: space-between;
+}
+
+.wrapper .paragrafs .home {
+  display: flex;
+  grid-gap: 30px;
+}
+
+.wrapper .paragrafs .home p {
+  color: var(--Primaty-Grey-Dark, #757575);
+  font: 600 14px "Montserrat";
+}
+
+.wrapper .paragrafs .nameStudents {
+  display: flex;
+  grid-gap: 30px;
+}
+
+.wrapper .paragrafs .nameStudents p {
+  color: var(--Primaty-Grey-Dark, #757575);
+  font: 600 14px "Montserrat";
+}
+
+.wrapper .stroke {
+  border: 1.2px solid #e6e5e5;
+  margin-top: 20px;
+}
+
+.wrapper .yootube {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+}
+
+.wrapper .yootube .img {
+  display: flex;
+  justify-content: space-around;
+  grid-gap: 30px;
+}
+
+.wrapper .yootube .img1 {
+  background-image: url(./assets/Frame\ 30.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30px;
+  height: 24px;
+}
+
+.wrapper .yootube .img2 {
+  background-image: url(./assets/Frame\ 31.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30px;
+  height: 24px;
+}
+
+.wrapper .yootube .img3 {
+  background-image: url(./assets/Frame\ 33.png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  width: 30px;
+  height: 24px;
+}
+
+.wrapper .yootube .project {
+  display: flex;
+  grid-gap: 5px;
+}
+
+.wrapper .yootube .project p {
+  color: var(--Primaty-Grey-Dark, #757575);
+  font: 600 12px "Montserrat";
+}
+
+.wrapper .yootube .project .hschool {
+  color: var(--Primaty-Grey-Dark, #757575);
+  font: 600 12px "Montserrat";
+  text-decoration-line: underline;
+}
