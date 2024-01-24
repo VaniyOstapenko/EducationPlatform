@@ -1,14 +1,15 @@
 .wrapper {
-  width: 1220px;
   margin: 4% auto 0;
 }
 
 .wrapper .previewContent {
   display: flex;
   height: 650px;
+  width: 1220px;
+  margin: auto;
 }
 
-.wrapper .previewContent .previewInfo{
+.wrapper .previewContent .previewInfo {
   position: relative;
   z-index: 2;
 }
@@ -87,11 +88,17 @@
   margin-left: -130px;
 }
 
+.wrapper .learnContent {
+  margin: auto;
+  background: #fff;
+}
+
 .wrapper .learnContent .secondPreview {
   display: flex;
   justify-content: space-between;
   height: 600px;
-  background: #fff;
+  width: 1220px;
+  margin: auto;
 }
 
 .wrapper .learnContent .secondPreview .Img {
@@ -138,27 +145,32 @@
   height: 112px;
 }
 
-.wrapper .knowledgeContent {
-  display: flex;
-  height: 400px;
-  margin-left: 100px;
+.wrapper .increaseContent {
+  margin: auto;
+  width: 1220px;
 }
 
-.wrapper .knowledgeContent .thirdPreview h2 {
+.wrapper .increaseContent .knowledgeContent {
+  display: flex;
+  height: 400px;
+  margin-left: 80px;
+}
+
+.wrapper .increaseContent .knowledgeContent .thirdPreview h2 {
   color: var(--Primaty-Black, #000);
   font: 400 48px "Dela Gothic One";
   width: 470px;
   margin-top: 170px;
 }
 
-.wrapper .knowledgeContent .thirdPreview p {
+.wrapper .increaseContent .knowledgeContent .thirdPreview p {
   color: var(--Primaty-Grey-Dark, #757575);
   font: 600 18p "Montserrat";
   width: 300px;
   margin-top: 30px;
 }
 
-.wrapper .knowledgeContent .thirdPreview .btn {
+.wrapper .increaseContent .knowledgeContent .thirdPreview .btn {
   border-radius: 100px;
   background: var(--Primaty-Cyan-Light, #c3dce3);
   color: #2b788b;
@@ -169,7 +181,7 @@
   margin-top: 34px;
 }
 
-.wrapper .knowledgeContent .thirdImg {
+.wrapper .increaseContent .knowledgeContent .thirdImg {
   background-image: url(./assets/image\ 2.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -179,13 +191,19 @@
 }
 
 .wrapper .progressContent {
-  display: flex;
-  margin-top: 150px;
-  height: 600px;
+  margin: auto;
   background: #fff;
+  margin-top: 150px;
 }
 
-.wrapper .progressContent .forthImg {
+.wrapper .progressContent .fourthPreview {
+  display: flex;
+  height: 600px;
+  width: 1220px;
+  margin: 40px auto;
+}
+
+.wrapper .progressContent .fourthPreview .fourthImg {
   background-image: url(./assets/image\ 1.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -194,21 +212,21 @@
   margin: 100px 0 0 50px;
 }
 
-.wrapper .progressContent .fourthText h2 {
+.wrapper .progressContent .fourthPreview .fourthText h2 {
   color: var(--Primaty-Black, #000);
   font: 400 48px "Dela Gothic One";
   width: 470px;
   margin-top: 130px;
 }
 
-.wrapper .progressContent .fourthText p {
+.wrapper .progressContent .fourthPreview .fourthText p {
   color: var(--Primaty-Grey-Dark, #757575);
   font: 600 18px "Montserrat";
   width: 390px;
   margin-top: 30px;
 }
 
-.wrapper .progressContent .fourthText .btn {
+.wrapper .progressContent .fourthPreview .fourthText .btn {
   border-radius: 100px;
   background: var(--Primaty-Cyan-Light, #c3dce3);
   width: 129px;

@@ -34,21 +34,25 @@ function Preview() {
                 </div>
             </div>
 
-            <div className={style.knowledgeContent}>
-                <div className={style.thirdPreview}>
-                    <h2>Increase your knowledge</h2>
-                    <p>Traditional and new effective approaches to learning languages</p>
-                    <div className={style.btn}>Textbook→</div>
+            <div className={style.increaseContent}>
+                <div className={style.knowledgeContent}>
+                    <div className={style.thirdPreview}>
+                        <h2>Increase your knowledge</h2>
+                        <p>Traditional and new effective approaches to learning languages</p>
+                        <div className={style.btn}>Textbook→</div>
+                    </div>
+                    <div className={style.thirdImg}></div>
                 </div>
-                <div className={style.thirdImg}></div>
             </div>
 
             <div className={style.progressContent}>
-                <div className={style.forthImg}></div>
-                <div className={style.fourthText}>
-                    <h2>Watch your progress every day</h2>
-                    <p>Save statistics on your achievements and mistakes</p>
-                    <div className={style.btn}>Statistics→</div>
+                <div className={style.fourthPreview}>
+                    <div className={style.fourthImg}></div>
+                    <div className={style.fourthText}>
+                        <h2>Watch your progress every day</h2>
+                        <p>Save statistics on your achievements and mistakes</p>
+                        <div className={style.btn}>Statistics→</div>
+                    </div>
                 </div>
             </div>
         </div>

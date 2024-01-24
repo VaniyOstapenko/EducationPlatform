@@ -1,26 +1,31 @@
 .wrapper {
+  box-shadow: 0px -1px 0px 0px #e0e0e0 inset;
+  height: 60px;
+}
+
+.wrapper .headerItem {
   width: 1220px;
   margin: auto;
 }
 
-.wrapper .item {
+.wrapper .headerItem .item {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.wrapper .item .textItem{
+.wrapper .headerItem .item .textItem {
   display: flex;
   align-items: center;
   grid-gap: 30px;
 }
 
-.wrapper .item .textItem h1 {
+.wrapper .headerItem .item .textItem h1 {
   font: 400 16px "Dela Gothic One";
   color: #000;
 }
 
-.wrapper .textItem .img {
+.wrapper .headerItem .textItem .img {
   background-image: url(./assets/Vector\ 1.png);
   background-repeat: no-repeat;
   background-size: contain;
@@ -28,18 +33,18 @@
   height: 17px;
 }
 
-.wrapper .item .btns {
+.wrapper .headerItem .item .btns {
   display: flex;
   align-items: center;
 }
 
-.wrapper .item .btns .login {
+.wrapper .headerItem .item .btns .login {
   font: 700 16px "Montserrat";
   color: #000;
   margin-right: 25px;
 }
 
-.wrapper .item .btns .reg {
+.wrapper .headerItem .item .btns .reg {
   font: 700 16px "Montserrat";
   color: #fff;
   border-radius: 14.188px;
@@ -47,7 +52,7 @@
   padding: 13px 21px;
 }
 
-.wrapper .stroke {
+/* .wrapper .headerItem .stroke {
   border: 1.2px solid #e6e5e5;
   margin-top: 15px;
-}
+} */
