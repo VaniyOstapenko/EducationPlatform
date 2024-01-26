@@ -10,8 +10,8 @@ function AuthPage() {
             <div className={style.wrapper}>
                 <div className={style.textBlock}>
                     <h1>Login</h1>
-                    <div><input placeholder="Placeholder text"></input></div>
-                    <div><input placeholder="Placeholder text"></input></div>
+                    <div><input placeholder="Email"></input></div>
+                    <div><input placeholder="Password"></input></div>
                     <div className={style.btn}>Login</div>
                 </div>
                 <div className={style.img}></div>

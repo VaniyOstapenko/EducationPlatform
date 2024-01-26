@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import style from './style.module.css'
 
 function Footer() {
@@ -25,7 +26,7 @@ function Footer() {
                 </div>
                 <div className={style.project}>
                     <p>©2021 Hschool. Project for</p>
-                    <p className={style.hschool}>Hschool.</p>
+                    <Link to={'/'}><p className={style.hschool}>Hschool.</p></Link>
                 </div>
             </div>
         </div>
