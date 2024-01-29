@@ -1,6 +1,7 @@
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import style from './style.module.css'
+import { Link } from "react-router-dom";
 
 function RegPage() {
     return (
@@ -13,7 +14,7 @@ function RegPage() {
                     <div><input placeholder="Surname"></input></div>
                     <div><input placeholder="Email"></input></div>
                     <div><input placeholder="Password"></input></div>
-                    <div className={style.btn}>Sign Up</div>
+                    <Link to={'/courses'}><div className={style.btn}>Sign Up</div></Link>
                 </div>
                 <div className={style.img}></div>
             </div>

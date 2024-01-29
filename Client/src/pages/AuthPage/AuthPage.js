@@ -1,6 +1,7 @@
 import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import style from './style.module.css'
+import { Link } from "react-router-dom";
 
 function AuthPage() {
     return (
@@ -12,7 +13,7 @@ function AuthPage() {
                     <h1>Login</h1>
                     <div><input placeholder="Email"></input></div>
                     <div><input placeholder="Password"></input></div>
-                    <div className={style.btn}>Login</div>
+                    <Link to={'/courses'}><div className={style.btn}>Login</div></Link>
                 </div>
                 <div className={style.img}></div>
             </div>
