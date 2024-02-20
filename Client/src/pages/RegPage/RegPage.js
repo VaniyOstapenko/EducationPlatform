@@ -43,8 +43,7 @@ function RegPage() {
             <div className={style.wrapper}>
                 <div className={style.textBlock}>
                     <h1>Sign Up</h1>
-                    {inputArray.map((el) => <Input el={el}></Input>
-                    )}
+                    {inputArray.map((el) => <Input el={el}></Input>)}
                     <Link to={'/courses'}><div className={style.btn}>Sign Up</div></Link>
                 </div>
                 <div className={style.img}></div>
