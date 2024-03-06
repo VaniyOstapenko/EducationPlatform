@@ -2,7 +2,7 @@ import Header from "../../components/Header/Header";
 import Footer from "../../components/Footer/Footer";
 import ItemCourse from "../../components/ItemCourse/ItemCourse";
 import style from './style.module.css'
-import Pagination from '@mui/material/Pagination';
+
 
 function Courses() {
     return (
@@ -16,9 +16,7 @@ function Courses() {
                     </div>
                     <ItemCourse></ItemCourse>
                 </div>
-                <div className={style.pagination}>
-                    <Pagination count={10} disabled size="large" />
-                </div>
+               
             </div>
             <Footer></Footer>
         </>
