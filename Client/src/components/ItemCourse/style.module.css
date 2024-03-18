@@ -87,10 +87,10 @@
 }
 
 .wrapper .item .textBlock {
-  margin-top: 20px;
+  margin-top: 21px;
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 19px;
 }
 
 .wrapper .item .textBlock h1 {
@@ -108,14 +108,14 @@
   color: var(--Primaty-Grey-Dark, #757575);
   font: 500 16px "Montserrat";
   width: 560px;
-  line-height: 20px;
+  line-height: 21px;
 }
 
 .wrapper .item .textBlock {
-  margin-top: 20px;
+  margin-top: 21px;
   display: flex;
   flex-direction: column;
-  gap: 18px;
+  gap: 19px;
 }
 
 .pagination {
