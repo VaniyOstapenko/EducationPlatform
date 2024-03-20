@@ -31,6 +31,8 @@ async function createCourseDB(course: string): Promise<iCourses[]> {
     console.log(`createCourse: ${error.message}`);
 
     return [];
+  } finally {
+    client.release();
   }
 }
 
@@ -48,6 +50,8 @@ async function updateCourseDB(id: number, course: string): Promise<iCourses[]> {
     console.log(`updateCourse: ${error.message}`);
 
     return [];
+  } finally {
+    client.release();
   }
 }
 
@@ -65,6 +69,8 @@ async function deleteCourseDB(id: number): Promise<iCourses[]> {
     console.log(`deleteCourse: ${error.message}`);
 
     return [];
+  } finally {
+    client.release();
   }
 }
 

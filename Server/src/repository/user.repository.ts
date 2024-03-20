@@ -33,6 +33,8 @@ async function createUserDB(name: string, surname: string, email: string, pwd: s
     console.log(`createUserDB: ${error.message}`);
 
     return [];
+  } finally {
+    client.release();
   }
 }
 
@@ -50,6 +52,8 @@ async function updateUserDB(id: number, name: string, surname: string, email: st
     console.log(`updateUserDB: ${error.message}`);
 
     return [];
+  } finally {
+    client.release();
   }
 }
 
@@ -68,6 +72,8 @@ async function deleteUserDB(id: number): Promise<iUser[]> {
     console.log(`deleteUser: ${error.message}`);
 
     return [];
+  } finally {
+    client.release();
   }
 }
 

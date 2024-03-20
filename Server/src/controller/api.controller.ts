@@ -21,7 +21,10 @@ route.post('/auth', async (req: Request, res: Response) => {
     const { email, pwd } = req.body;
     const data = await authUser(email, pwd);
     const token = createToken(data);
-    res.setHeader('authorization', [token]);
+    res.cookie('Bearer', token, {
+      httpOnly: false,
+      secure: true,
+    });
     buildResponse(res, 200, data);
   } catch (error: any) {
     buildResponse(res, 404, error.message);
