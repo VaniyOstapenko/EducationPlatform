@@ -5,7 +5,10 @@ async function getUserByEmailDB(email: string): Promise<iUser[]> {
   const client = await pool.connect();
   const sql = `select * from users where email =$1`;
 
-  return (await client.query(sql, [email])).rows;
+  const data = (await client.query(sql, [email])).rows;
+  client.release();
+
+  return data;
 }
 
 async function registrationUserDB(name: string, surname: string, email: string, pwd: string): Promise<iUser[]> {

@@ -5,7 +5,7 @@ async function getAllUsersDB(): Promise<iUser[]> {
   const client = await pool.connect();
   const sql = `select * from users`;
   const data = (await client.query(sql)).rows;
-
+  client.release();
   return data;
 }
 
@@ -14,7 +14,7 @@ async function getUserByIdDB(id: number): Promise<iUser[]> {
   const sql = `select * from users where id =$1`;
 
   const data = (await client.query(sql, [id])).rows;
-
+  client.release();
   return data;
 }
 

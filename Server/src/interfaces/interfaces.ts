@@ -37,6 +37,7 @@ interface isValid {
 interface iCourses {
   id: number;
   course: string;
+  description: string;
 }
 
 export { iUser, isValid, iCourses };

@@ -16,15 +16,15 @@ async function getCourseById(id: number): Promise<iCourses[]> {
   return data;
 }
 
-async function createCourse(course: string): Promise<iCourses[]> {
-  const data = await createCourseDB(course);
+async function createCourse(course: string, description: string): Promise<iCourses[]> {
+  const data = await createCourseDB(course, description);
   if (!data.length) throw new Error(ExceptionType.DATA_VALID_SERVICE_CREATE_COURSE);
 
   return data;
 }
 
-async function updateCourse(id: number, course: string): Promise<iCourses[]> {
-  const data = await updateCourseDB(id, course);
+async function updateCourse(id: number, course: string, description: string): Promise<iCourses[]> {
+  const data = await updateCourseDB(id, course, description);
   if (!data.length) throw new Error(ExceptionType.DATA_VALID_SERVICE_UPDATE_COURSE);
 
   return data;
