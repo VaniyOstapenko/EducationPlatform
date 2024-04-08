@@ -8,14 +8,21 @@ import axios from 'axios'
 function SingleCourse() {
     const { id } = useParams()
     const [languages, setLanguages] = useState([{}])
+    const [lessons, setLessons] = useState([{}])
 
     async function getLanguagesId() {
         const response = await axios.get(`http://localhost:3001/course/${id}`)
         setLanguages(response.data);
     }
 
+    async function getLessons() {
+        const response = await axios.get(`http://localhost:3001/lessons/${id}`)
+        setLessons(response.data);
+    }
+
     useEffect(() => {
         getLanguagesId()
+        getLessons()
     }, [])
 
     return (<>
@@ -32,14 +39,9 @@ function SingleCourse() {
                 <button>Go to course</button>
             </div>
             <div className={style.boxLessons}>
-                <h1>15 lessons</h1>
+                <h1>{lessons.length} lessons</h1>
                 <ol>
-                    <li>1.Test</li>
-                    <li>2.Test</li>
-                    <li>3.Test</li>
-                    <li>4.Test</li>
-                    <li>5.Test</li>
-                    <li>6.Test</li>
+                    {lessons.map((el) => <li>{el.title}</li>)}
                 </ol>
             </div>
         </div>

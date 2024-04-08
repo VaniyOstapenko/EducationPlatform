@@ -40,4 +40,10 @@ interface iCourses {
   description: string;
 }
 
-export { iUser, isValid, iCourses };
+interface iLessons {
+  id: number;
+  title: string;
+  course_id: number;
+}
+
+export { iUser, isValid, iCourses, iLessons };
