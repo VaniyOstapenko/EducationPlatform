@@ -1,6 +1,7 @@
 import style from './style.module.css'
 import Header from '../../components/Header/Header'
 import Footer from '../../components/Footer/Footer'
+import { Link } from 'react-router-dom'
 import { useParams } from 'react-router-dom'
 import { useEffect, useState } from 'react'
 import axios from 'axios'
@@ -36,7 +37,7 @@ function SingleCourse() {
                         <p>{languages[0]?.description}</p>
                     </div>
                 </div>
-                <button>Go to course</button>
+                <Link to='/courses'><button>Go to course</button></Link>
             </div>
             <div className={style.boxLessons}>
                 <h1>{lessons.length} lessons</h1>

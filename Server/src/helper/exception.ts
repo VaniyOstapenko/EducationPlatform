@@ -12,6 +12,12 @@ const ExceptionType: isValid = {
   DATA_VALID_SERVICE_UPDATE_COURSE: 'no data - updateCourse',
   DATA_VALID_SERVICE_DELETE_COURSE: 'no data - deleteCorse',
 
+  DATA_VALID_SERVICE_GET_ALL_LESSONS: 'no data - get lessons',
+  DATA_VALID_SERVICE_GET_LESSONS_BY_ID: 'no data - get lessons by id',
+  DATA_VALID_SERVICE_CREATE_LESSONS: 'no data - create lessons',
+  DATA_VALID_SERVICE_UPDATE_LESSONS: 'no data - updateLessons',
+  DATA_VALID_SERVICE_DELETE_LESSONS: 'no data - deleteLessons',
+
   DATA_API_FOUND_USER: 'user allready exsist',
   DATA_API_LENGTH: 'no data - registration api',
   DATA_AUTH_USER: 'not user',
