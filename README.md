@@ -64,7 +64,7 @@ My platform employs a multi-step authentication process to ensure security:
 - Material UI (for the user interface)
 - ESLint and Prettier (for code formatting and linting)
 
-## Getting Started
+### Getting Started
 
 To set up and run the educational platform on your local machine, follow these steps:
 
