@@ -91,10 +91,10 @@ cd ./client
 npm run start
 ```
 
-## Contributing
+### Contributing
 I welcome contributions from the community! If you'd like to contribute, please follow my contribution guidelines.
 
-## License
+### License
 The project is licensed under the MIT License. Feel free to use, modify, and distribute the code as permitted by the license.
 
 Thank you for considering my educational platform. I hope you find it valuable for learning and improving your programming skills! If you encounter any issues or have suggestions, please feel free to raise them in my issue tracker. Happy learning!
