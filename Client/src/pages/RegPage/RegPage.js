@@ -53,7 +53,7 @@ function RegPage() {
             id: 5,
             placeholderValue: 'Enter ConfirmPassword...',
             inputType: 'password',
-            name: 'confirmPwd'
+            name: 'repeatPwd'
         },
     ]
 
