@@ -91,7 +91,7 @@ cd ./client
 npm run start
 ```
 
-### Contributing
+## Contributing
 I welcome contributions from the community! If you'd like to contribute, please follow my contribution guidelines.
 
 ### License
